@@ -6,10 +6,11 @@ mkdir ~/freenas
 sudo mount -t nfs freenas:/mnt/RAID1/csgo ~/freenas
 echo Mounted freenas
 
-cp -r ~/freenas/cleanserver/* ~/csgoebotserver
+mkdir ~/csgoebotserver
+cp -r -v ~/freenas/cleanserver/* ~/csgoebotserver
 echo Copied CSGOclean to server
 
-cp -r ~/freenas/csgoebotserver ~/
+cp -r -v ~/freenas/csgoebotserver ~/
 echo Copied Files from git to server
 
 sudo umount -f -l ~/freenas

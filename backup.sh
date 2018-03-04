@@ -7,10 +7,10 @@ echo Mounted freenas
 mkdir ~/freenas/backup
 echo Created backup folder
 
-cp ~/csgoebotserver/csgo/*.dem ~/freenas/backup
+cp -v ~/csgoebotserver/csgo/*.dem ~/freenas/backup
 echo Created Backups of demos
 
-cp  ~/csgoebotserver/csgo/ebot_*.txt ~/freenas/backup
+cp -v ~/csgoebotserver/csgo/ebot_*.txt ~/freenas/backup
 echo Created Backups of roundBackups
 
 sudo umount -f -l ~/freenas
