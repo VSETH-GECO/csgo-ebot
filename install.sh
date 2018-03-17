@@ -19,6 +19,15 @@ echo Unmounted freenas
 rmdir ~/freenas
 echo Removed freenas dir
 
+chmod +x ~/csgoebotserver/copyCfgs.sh
+echo Made copyCfgs.sh executable
+
+chmod +x ~/csgoebotserver/updateNAS.sh
+echo Made updateNAS.sh executable
+
+chmod +x ~/csgoebotserver/update.sh
+echo Made update.sh executable
+
 chmod +x ~/csgoebotserver/start.sh
 echo Made start.sh executable
 
