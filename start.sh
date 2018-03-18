@@ -8,7 +8,7 @@ then
 		PORT=$(( 27020+$1 ))
 		TVPORT=$(( 27120+$1 ))
 		screen -d -m -S csEBot$1 ~/csgoebotserver/srcds_run -game csgo -console -usercon -tickrate 128 +exec pre +map aim_redline -port $PORT +tv_port $TVPORT +ip $IP +hostname PolyLAN-$HOSTNAME$1 +tv_name PolyTV-$HOSTNAME$1 +tv_title PolyTV-$HOSTNAME$1
-		echo Started $HOSTNAME$1 on $IP:$PORT/:$TVPORT
+		echo Started $HOSTNAME\.$1 on $IP:$PORT/:$TVPORT
 	else
 		echo Screen csEBot$1 already running.
 	fi
