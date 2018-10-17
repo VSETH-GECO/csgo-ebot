@@ -8,7 +8,7 @@ sudo apt-get -y install lib32gcc1 steamcmd nfs-common
 echo Installed steamcmd and nfs-common
 
 mkdir ~/freenas
-sudo mount -t nfs freenas:/mnt/RAID1/csgo ~/freenas
+sudo mount -t nfs freenas.geco.local:/mnt/RAID1/csgo ~/freenas
 echo Mounted freenas
 
 mkdir ~/csgoebotserver
@@ -45,8 +45,8 @@ echo Made backup.sh executable
 ln -s ~/csgoebotserver/start.sh ~/startMatch.sh
 echo Created simlink to start.sh
 
-ln -s ~/csgoebotserver/start.sh ~/startMatchWM.sh
+ln -s ~/csgoebotserver/startWM.sh ~/startMatchWM.sh
 echo Created simlink to startWM.sh
 
-ln -s ~/csgoebotserver/backup.sh ~/backupEbot.sh
+ln -s ~/csgoebotserver/backup.sh ~/backup.sh
 echo Created simlink to backup.sh
