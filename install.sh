@@ -37,8 +37,8 @@ if [[ $1 =~ ^[1-3]{1}$ ]] ; then
 	chmod +x ~/csgoebotserver/start$1.sh
 	echo Made start$1.sh executable
 
-	chmod +x ~/csgoebotserver/start$1WM.sh
-	echo Made start$1WM.sh executable
+	chmod +x ~/csgoebotserver/start${1}WM.sh
+	echo Made start${1}WM.sh executable
 
 	chmod +x ~/csgoebotserver/backup.sh
 	echo Made backup.sh executable
@@ -46,7 +46,7 @@ if [[ $1 =~ ^[1-3]{1}$ ]] ; then
 	ln -s ~/csgoebotserver/start$1.sh ~/startMatch.sh
 	echo Created simlink to start.sh
 
-	ln -s ~/csgoebotserver/start$1WM.sh ~/startMatchWM.sh
+	ln -s ~/csgoebotserver/start${1}WM.sh ~/startMatchWM.sh
 	echo Created simlink to startWM.sh
 
 	ln -s ~/csgoebotserver/backup.sh ~/backup.sh
