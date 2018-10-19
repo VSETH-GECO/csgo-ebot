@@ -1,1 +1,1 @@
-Documentation Missing!!
+Add pws and gslt in pw_gslt.cfg!
