@@ -13,7 +13,7 @@ if [[ $1 =~ ^[1-3]{1}$ ]] ; then
 	echo Mounted freenas
 
 	mkdir ~/csgoebotserver
-	cp -r -v ~/freenas/cleanserver/ ~/csgoebotserver
+	cp -r -v ~/freenas/cleanserver/* ~/csgoebotserver
 	echo Copied CSGOclean to server
 
 	cp -r -v ~/freenas/csgoebotserver ~/
